@@ -1,4 +1,5 @@
-const todoModel = require("./../../db/models/todos");
+// #1 Fixed path
+const todoModel = require("./../../db/models/todo");
 
 const getAllTodo = (req, res) => {
   todoModel
@@ -93,8 +94,10 @@ const deleteTodo = (req, res) => {
     });
 };
 
-module.export = {
+// #4 adds the letter s to export :)
+module.exports = {
   getAllTodo,
+  updateTodo,
   getTodoById,
   getCompletedTodos,
   createTodo,

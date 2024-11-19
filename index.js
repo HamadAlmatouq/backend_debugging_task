@@ -1,8 +1,11 @@
+// #6 fixed the .env remove the ; after the port
+
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
+const morgan = require("morgan");
 
-require("../db");
+require("./db");
 
 const app = express();
 
